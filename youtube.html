@@ -8,13 +8,14 @@
      <title>YouTube</title>
 </head>
 <body class="text-gray-600 bg-gray-50">
-   <Header class="flex fixed z-30 w-full bg-white ">
-        <div class="flex item-center w-1/4 pl-4" >
-             <button class="pl-2 pr-6">
+   <header class="flex justify-between fixed z-30 w-full">
+        <div class="flex lg:w-1/4">
+        <div class="flex item-center xl:w-64 xl:bg-white pl-4">
+             <button class="mr-3 sm:ml-2 sm:mr-6">
                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
              </button>
              <a href="/">
-               <svg class="w-20" viewBox="409.289 277.787 512 114.301" width="512" height="114.301" xmlns="http://www.w3.org/2000/svg">
+               <svg class="w-20 mt-[19px]" viewBox="409.289 277.787 512 114.301"  xmlns="http://www.w3.org/2000/svg">
                     <g viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" transform="matrix(5.715038, 0, 0, 5.715038, 409.288757, 277.787231)">
                       <g class="style-scope yt-icon">
                         <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" class="style-scope yt-icon" fill="#FF0000"/>
@@ -35,10 +36,11 @@
                   </svg>
              </a>
         </div>
-        <div class="p-2.5 flex items-center w-1/2">
-             <div class=" flex w-full h-full pt-[35px]">
-               <input class="w-full  h-7 px-3 rounded-bl-sm rounded-tl-sm shadow-inner border border-gray-300 focus:border-blue-700 focus:outline-none" placeholder="Search" type="text">
-               <button class="flex h-7 items-center px-6 py-1 text-gray-600 bg-gray-100 border border-l-0 border-gray-300 rounded-rt-sm rounded-br-sm hover:bg-gray-200">
+       </div>
+        <div class="hidden sm:flex p-2.5 items-center justify-end pl-8 sm:pl-12 lg:w-1/2 md:px-8 flex-1 lg:px-0 max-w-screen-md">
+             <div class=" flex w-full  ">
+               <input class="w-full   px-3 rounded-bl-sm rounded-tl-sm shadow-inner border border-gray-300 focus:border-blue-700 focus:outline-none" placeholder="Search" type="text">
+               <button class="flex items-center px-6 py-1 text-gray-600 bg-gray-100 border border-l-0 border-gray-300 rounded-rt-sm rounded-br-sm hover:bg-gray-200">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                </button>
              </div>
@@ -46,21 +48,27 @@
                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"></path></svg>
              </button>
         </div>
-        <div class="flex items-center justify-end  w-1/4 space-x-5 py-2 px-4">
+        <div class="flex items-center justify-end  lg:w-1/4 space-x-4 sm:space-x-5 p-2 sm:px-4">
+          <button class="sm:hidden">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd"></path></svg>
+             </button>
+          <button class="sm:hidden">
+               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+          </button>
              <button>
                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
              </button>
              <button>
                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg>
              </button>
-             <button class="flex items-center px-2 py-1 text-sm text-blue-700 uppercase border border-blue-700 rounded-sm ">
+             <button class="flex items-center px-2 py-1 text-sm text-blue-700 uppercase border border-blue-700 rounded-sm whitespace-nowrap ">
                   <svg class="mr-2 w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path></svg>
                   Sign In
              </button>
         </div>
-   </Header>
-   <aside class="hidden md:block xl:hidden min-h-screen overflow-auto fixed top-0 pt-[7rem] bg-white z-20">
-     <section >
+   </header>
+   <aside class="hidden md:block xl:hidden min-h-screen overflow-auto fixed top-0 pt-[3rem] bg-white z-20">
+     <section>
           <ul>
                <li>
                    <a href="#" class="flex flex-col items-center px-5 py-5 text-red-500 hover:bg-gray-100">
@@ -97,7 +105,7 @@
           </ul>
      </section>
 </aside>
-   <aside class="hidden xl:block w-64 max-h-screen overflow-auto fixed top-0 pt-[7rem] bg-white z-20">
+   <aside class="hidden xl:block w-64 max-h-screen overflow-auto fixed top-0 pt-[3rem] bg-white z-20">
         <section class="py-2 border-b">
              <ul>
                   <li>
@@ -286,7 +294,7 @@
           </div>
      </section>
    </aside>
-   <section class="pt-[120px] md:pl-24 xl:pl-64 fixed bg-white w-full z-10">
+   <section class="pt-[55px] md:pl-24 xl:pl-64 fixed bg-white w-full z-10 bg-opacity-95">
         <div class="border-t border-b">
           <div class="flex space-x-3  max-w-screen-2xl m-auto overflow-auto  px-4 py-3  text-sm whitespace-nowrap">
                <a href="" class="px-3 transition py-1 bg-gray-600 border border-gray-300 rounded-full hover:bg-gray-500 text-white">All</a>
@@ -321,7 +329,7 @@
           </div>
         </div>
    </section>
-     <main class="md:ml-24 xl:ml-64 pt-[200px] px-20 sm:px-5 pb-5">
+     <main class="md:ml-24 xl:ml-64 pt-[130px] px-5  pb-5">
           <div class="grid sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-4 max-w-screen-2xl m-auto ">
                <a href="#" class="mb-7 group">
                     <div class="relative">
